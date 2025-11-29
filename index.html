@@ -1,69 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Insurance - Secure Your Future</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeShield Insurance – Secure Your Family's Future</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>LifeShield Insurance</h1>
+        <div class="logo">LifeShield<span> Insurance</span></div>
         <nav>
+            <a href="#home">Home</a>
             <a href="#plans">Plans</a>
-            <a href="#benefits">Benefits</a>
+            <a href="#calculator">Calculator</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Protect What Matters Most</h2>
-        <p>Your family deserves financial security. Choose the right life insurance today.</p>
-        <a href="#contact" class="btn">Get a Free Quote</a>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Protect Your Loved Ones With the Right Insurance Plan</h1>
+            <p>We help you secure your family’s financial future with affordable, reliable, and transparent life insurance policies.</p>
+            <a href="#plans" class="btn">Explore Plans</a>
+        </div>
     </section>
 
+    <!-- BENEFITS -->
     <section id="benefits" class="section">
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>✔ Affordable premiums</li>
-            <li>✔ Quick claim settlement</li>
-            <li>✔ Tax benefits</li>
-            <li>✔ 24/7 customer support</li>
-        </ul>
+        <h2>Why Choose LifeShield?</h2>
+        <div class="benefits">
+            <div class="benefit-box">✔ Fast Claim Settlement</div>
+            <div class="benefit-box">✔ Tax Benefits under Section 80C</div>
+            <div class="benefit-box">✔ Affordable Premiums</div>
+            <div class="benefit-box">✔ 24/7 Customer Support</div>
+        </div>
     </section>
 
+    <!-- PLANS -->
     <section id="plans" class="section">
-        <h2>Our Plans</h2>
+        <h2>Our Insurance Plans</h2>
+
         <div class="plans-container">
             <div class="plan">
                 <h3>Term Insurance</h3>
-                <p>High coverage at low premium.</p>
+                <p>High coverage at low premiums. Best for family protection.</p>
             </div>
+
             <div class="plan">
                 <h3>Whole Life Plan</h3>
-                <p>Lifetime protection and savings.</p>
+                <p>Guaranteed lifetime coverage with wealth creation.</p>
             </div>
+
+            <div class="plan">
+                <h3>Retirement Plan</h3>
+                <p>Secure monthly income after retirement.</p>
+            </div>
+
             <div class="plan">
                 <h3>Child Future Plan</h3>
-                <p>Secure your child's education.</p>
+                <p>Secure your child’s education and future goals.</p>
             </div>
         </div>
     </section>
 
+    <!-- CALCULATOR -->
+    <section id="calculator" class="section calculator">
+        <h2>Premium Calculator</h2>
+
+        <div class="calc-box">
+            <input id="age" type="number" placeholder="Enter Age" />
+            <input id="cover" type="number" placeholder="Coverage Amount (e.g. 1000000)" />
+            <button onclick="calculatePremium()">Calculate Premium</button>
+            <h3 id="result"></h3>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
-        <h2>Request a Free Quote</h2>
+        <h2>Request a Callback</h2>
+
         <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <textarea placeholder="Message" rows="4"></textarea>
             <button type="submit">Submit</button>
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 LifeShield Insurance. All rights reserved.</p>
+        <p>© 2025 LifeShield Insurance. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
